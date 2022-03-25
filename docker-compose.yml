@@ -1,0 +1,10 @@
+version: '3.3'
+
+services: 
+  producers-web-proxy:
+    build: ./
+    image: my-nginx
+    container_name: my-nginx
+    network_mode: host
+    # Setup a volume to serve static files
+    # volumes:
